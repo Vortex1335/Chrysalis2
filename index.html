@@ -7,7 +7,12 @@
     <link href="TemplateData/style.css" rel="stylesheet">
 	<script src="TemplateData/UnityProgress.js" type="text/javascript"></script>
   </head>
-  <body class="template">
+  <body class="template" onload="redirect()">
+<script lang="JavaScript">
+	function redirect() {
+		window.location.href = "https://chrysalis3.vercel.app/mainpg.html"
+	}
+</script>
     <div class="template-wrap clear">
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600" width="900"></canvas>
     </div>
