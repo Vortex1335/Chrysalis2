@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title></title>
+    <title>Home</title>
     <meta name="HandheldFriendly" content="true" />
     <meta
       name="viewport"
@@ -14,12 +14,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <!-- Google adsense -->
-    <script
-    >
-      window.location.href = "/mainpg/html";
-    </script>
   </head>
-  <body style="overflow: hidden; margin: 0; padding: 0">
+  <body onload="redirect()">
     <p
       style="
         font-family: 'Gunplay';
@@ -31,17 +27,9 @@
       Font loader
     </p>
     <script>
-      var AT = {
-        SITE_LOCK_TARGET: "/",
-      };
-
-      var WebFontConfig = {
-        classes: false,
-        timeout: 0,
-        active: function () {},
-        custom: { families: ["Gunplay"], urls: ["styles/fonts.css"] },
-      };
+      function redirect() {
+            window.location.href = "/mainpg/html";
+      }
     </script>
-    <script src="awesome_tanks_2.js"></script>
   </body>
 </html>
