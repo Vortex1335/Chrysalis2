@@ -1,77 +1,101 @@
----
-permalink: /404.html
----
-
 <!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113454647-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-113454647-1');
-    </script>
-    <title>404 - page not found</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Online Game Site" />
+    <meta name="keywords" content="game, online, site" />
+    <meta name="author" content="Seiri" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1a1a1a" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="favicon.ico" />
     <style>
-        body {
-            font-family: "Helvetica", "Arial", sans-serif;
-            font-size: 150%;
-            margin: 0;
-        }
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
+        color: #fff;
+        height: 100vh;
+      }
 
-        header {
-            background-color: #222;
-            color: #fff;
-            padding: 0.1em 0em 0.1em 0em;
-            text-align: center;
-            margin: 0;
-            padding: 1.5em;
-            font-size: 200%;
-        }
+      header {
+        background-image: linear-gradient(to right, #ff6b6b, #ffa500);
+        color: #fff;
+        padding: 10px 30px;
+        text-align: center;
+      }
 
-        a {
-            text-decoration: none;
-            color: #2793c7;
-        }
+      nav {
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+      }
 
-        a:hover {
-            text-decoration: underline;
-            color: #000;
-        }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        transition: background-color 0.5s;
+      }
 
-        .center {
-            text-align: center;
-            padding: 0;
-            margin: auto;
-            display: block;
-        }
+      nav a:hover {
+        background-color: #727272;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      .not-found-container {
+        margin: 3em;
+        text-align: center;
+        font-size: 2em;
+        height: 100%;
+      }
     </style>
-</head>
+    <title>Not Found Page</title>
+  </head>
+  <!-- Google adsense -->
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4988552421895566"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-PF5LNZJYLL"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-<body>
+    gtag("config", "G-PF5LNZJYLL");
+  </script>
+  <body>
     <header>
-        404 - page not found
+      <h1>Online Game Site</h1>
     </header>
-    <br>
-    <br>
-    <br>
-    <p class='center'>
-        Back to
-        <a href="https://chrysalis2.vercel.app/physics/index.html"> physics </a> or <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> games </a>
-    </p>
-    </div>
-    <!-- <script>
-        // similar behavior as an HTTP redirect
-        window.location.replace("http://landgreen.github.io");
-
-        // similar behavior as clicking on a link
-        // window.location.href = "http://stackoverflow.com";
-    </script> -->
-</body>
+    <nav>
+      <a href="https://html-online-game.github.io/">Home</a>
+      <a href="https://html-online-game.github.io/policy.html">Policy</a>
+    </nav>
+    <main class="not-found-container">
+      <h2>404</h2>
+      <div>Page not found.</div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Online Game Site. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
