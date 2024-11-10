@@ -1,4 +1,0 @@
-FB= {
-  "login": function() {
-  }
-}
