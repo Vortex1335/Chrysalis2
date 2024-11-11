@@ -1,0 +1,253 @@
+(function() {
+    
+var script = document.getElementById("celtra-script-1");
+if (!script || script.tagName.toLowerCase() !== 'script')
+    throw 'Element with id equal to scriptId does not exist or is not a script.';
+  
+    var runtimeParams = {"tagVersion":"html-standard-7","deviceInfo":{"deviceType":"Desktop","primaryHardwareType":"desktop","mobileDevice":false,"osName":"Windows","osVersion":"10","platform":"DesktopPlatform","platformVersion":null,"browserName":"Chrome","browserVersion":"130.0.0.0","browserRenderingEngine":"WebKit","vendor":null,"model":null},"weather":{"windy":"0","currentCondition":"sunny","apparentTemperature":21.0,"temperature":21.0,"windSpeed":6,"cloudCoverage":0,"conditions":[{"name":"sunny","weight":1}]},"ipCountryCode":"US","ipRegionCode":null,"ipPrincipalSubdivisionCode":"CA","ipCityGeonameId":"5391811","ipCity":"San Diego","ipPostalCode":"92131","ipLat":32.9167,"ipLng":-117.0903,"accountId":"956f1ed1","folderId":"822682f5","placementId":"24c9dfe4","supplierId":"992954c6","sessionId":"s1731282219xbb08f6a1767a9bx59880357","purpose":"live","secure":1,"clientTimestamp":"1731282187.648","clientTimeZoneOffsetInMinutes":480,"clientIp":"70.95.200.0","gpsLat":32.91,"gpsLng":-117.09,"language":"en","acceptLanguage":"en-US,en;q=0.9","platformAdvId":null,"platformAdvIdTrackingLimited":null,"userIdentifiers":{},"variantChoices":{},"neustarSegment":null,"authBasis":"1731282219126,bf4e5b8f,24c9dfe4","authToken":"29e68d45dfd284ef427e608def58d92a","customAudiences":{},"derivedAudiences":{},"destinationDefinitions":[{"campaignId":null,"placementId":"24c9dfe4","creativeId":null,"eventName":"urlOpened","reportLabel":"click-thru","destinationUrl":"https://15minuteoilchange.com/nexxen","destination":{"url":"https://15minuteoilchange.com/nexxen","clazz":"Fixed"},"impressionUrl":null}],"dynamicContent":[],"moatCustomAttributes":{},"admarvel_format":null,"overrides":{"placementId":"24c9dfe4","customAudiences":{},"derivedAudiences":{},"deviceInfo":{"deviceType":"Desktop","primaryHardwareType":"desktop","mobileDevice":false,"osName":"Windows","osVersion":"10","platform":"DesktopPlatform","platformVersion":null,"browserName":"Chrome","browserVersion":"130.0.0.0","browserRenderingEngine":"WebKit","vendor":null,"model":null},"language":"en","ipCountryCode":"US","ipRegionCode":null,"ipPrincipalSubdivisionCode":"CA","ipCityGeonameId":"5391811","ipMetroCode":825,"ipCity":"San Diego","weather":{"windy":"0","currentCondition":"sunny","apparentTemperature":21.0,"temperature":21.0,"windSpeed":6,"cloudCoverage":0,"conditions":[{"name":"sunny","weight":1}]},"clientTimestamp":"1731282187.648","clientTimeZoneOffsetInMinutes":480},"utSignals":null,"_mraidCheck":null,"fallbackSdk":null,"passthroughParameters":{},"googleMapsClientKey":"AIzaSyC1ZUVxTieLZKoMiyChigPmbTmLNQsTnTM","shouldShowMapsPrompt":false,"pageSkinsHost":null,"pageSkinsPath":null,"stickToPageHeader":null,"externalAdServer":"Amobee","externalCreativeId":"1609579883","externalCreativeName":null,"externalPlacementId":null,"externalPlacementName":null,"externalSiteId":"https://agar.io/","externalSiteName":null,"externalSupplierId":"158","externalSupplierName":null,"externalLineItemId":"1609771726","externalSessionId":"7800062555675572522","externalBundleId":"","externalCreativeWidth":300,"externalCreativeHeight":250,"externalCampaignId":null,"externalCampaignName":null,"externalAdvertiserId":null,"externalDestinationUrl":null,"clickUrl":"https://presentation-pdx1.turn.com/r/formclick/urlid/1XsZWZfoTOiG6Rs8JKzFclq3clLeygd6POrFX1gvk8GLJgLmdLQYGnfDnDdAZSpNM9lKfk-og3HGqOLW6rsv9lgVUaa81rE5Va5TPoJV_1Ntn4-ZNPeiesLCUWGi5Q0pMJmYCXbQF_oYMjRN21w4LJTbLcisF5vf52pYjnxx7sgLDq60qaLSM9lSDH_P7r3m2LfHLNhuhT3pi82fEsIKY-zMcLaIqUa9FRu7ru1ABYiMSovQFojw5vW2yPjGkSVc0HVBzulYFlMXx62SJJzd5l8ksZRIgSQc_prBdh2vvVdldmWAaDuAmO71GvHXzkcHKsPGtQPA5tNJwUqr-aElAV5qGrnx9bwjX7PAkvwBwOakiNNG_3c-GkFswlOjiVE0ej-qs-UQ3Mx3VUBnpWQ2d7vliwhTzzzCljJgWdol-wLA_nMsuROzhZ_CH9wqRMdtmNACs-tBcCpdgtEpdE3B_nrTaXPRUNSsdb1rmbQbC7JJm_SJdFq9dFFsrRVoU4WBetMmuq6gl6N2db-5rNaK8nBZrvBBzEzJ4iAZQ0F6Wm2nc1QYL5T8xaYQC1O1-T7ki3NUbSq602Vyt-H_WldH_MK2GksZ-zhybhYHis8e_tSwph1Kpj2Q8YpaaCRsxMNNRQcWHSybb2ej4a7iteRseG_7HzwdXc8C3YNIyQYbO39B8ocmP-FeqJjE7BX57nNvuwpu_QP3Y_XJsHdTebRazFw0i1ey_v9fXlyhLV9UJxQVUTiuIOF5Ek_9XmvuEmT0vEluZoqYerW0HgC_wqcCYSWNjhh5OPtJbggF3FbE1YCR7Xq54b0dq54SCC-aQRzZ9vb_-KhhL2Fc9Ru3Cn8LwUECjf2eGEkjmMA-oZFRas2p3FMQygkm3rlnGm21B03sROr2ygx-iOG0liAhrNmDhdYGutw4VUJRBcOjv9b37eWz4Cp4Qjy-CXKUgO9gpP9v4w_8lt_qNF0RzK7uP2rBb_OPyQKWk_uhZykOT9k-rtueHoS3SjAxoWE0mr7tpeVnoXm_sLGrFot5PfKQkLfL37eDp93v3UjFqrwgXQ_PnfOcO7go25Zi5ftDWsbcN-vy7N8paTkCK7zWESqBvbUrnZo1ShC0Z2qttrUnkK4SVzcB7QacO35QtRUwk3PZb8FJFMlh2axYZqhfFFI3VNBaXJvrqIdvI0_N5j8dwcSUbduATrXp32z96mFz4TjrXq_WDGEAhdLLvBGdHsiW4MER6l33pV72UzwiddEPalVQbBceyuix4YHfsmobqROyGym3uMnYYIc7nbDvcYE1hgrlkxrSl8W3lWE7OHmBUPnH2s2OwH1tJKRR5-m5o_bYvG2O0mi1mI78qZDqL-OmNnb2Dtg/url/","useClickAsDestination":null,"scriptId":"celtra-script-1","firehoseUrl":null,"clickEvent":"advertiser","clickUrlNeedsDest":null,"ncu":null,"firstPage":1,"dataURIsEnabled":0,"monotypeProjectId":"c46ed090-3671-4163-a85b-b06b4038ae38","iosAdvId":null,"iosAdvIdTrackingLimited":null,"androidAdvId":null,"androidAdvIdTrackingLimited":null,"moatRandom":{"first":1406594794,"second":1651279651},"skipOffset":null,"_enablePoliteLoading":null,"massProductionPreview":null,"_politeImageUrl":null,"_politeClickThrough":null,"sticky":null,"showDismissButton":null,"_mopubExt":null,"enabledServices":["contentSharing"],"creativeVariantLockSize":null,"screenIdLock":null,"vastVersion":null,"standalonePreview":null,"campaignExplorer":null,"exportingFirstFrame":null,"exportingFrameRate":null,"exportingVideoAssetBlobHash":null,"country":"US","campaignName":"Valvoline-Henley Enterprises_AUS40278 Q1 2024 Epic NCIS-1631","agencyId":"992954c6","customPartnerAttributeBrandId":null,"suppressCloseButton":null,"useComponentNameAsDataAttribute":null,"featureFlags":{"perAccountRateLimiting":true,"noConfigSkinPositioning":false,"allowGlobalSkinPageConfigs":false,"decreasePayloadWeight":true,"useTCFConsentViaGPPFramework":false,"canFLAEscapeIABIframe":true,"useTCFCanada":false,"ctvDeviceType":true,"sliderPositionEvent":true},"preferredClickThroughWindow":"new","externalCreativeSize":"300x250","expandDirection":"undefined","widthBreakpoint":"","hostPageLoadId":"006073929327379712"};
+    runtimeParams.overridableClickThroughDestinationUrl = false;
+    runtimeParams.redirectJsClientTimestamp = new Date() / 1000;
+    
+    
+var macros = function (x) {
+    if (x instanceof Array) {
+        return x.map(macros);
+    } else {
+        var macroTags = [
+            ['\\$!\\{CREATIVE_ID\\}', "1609579883"]
+,['%%CACHEBUSTER%%', (Math.random()+'').slice(2)]
+,['%n', (Math.random()+'').slice(2)]
+,['%s', "https"]
+,['\\[timestamp\\]', (Math.random()+'').slice(2)]
+,['\\{celtraAccountId\\}', "956f1ed1"]
+,['\\{celtraAgencyId\\}', "992954c6"]
+,['\\{celtraAndroidAdvIdTrackingLimitedBoolStr\\}', ""]
+,['\\{celtraAndroidAdvIdTrackingLimited\\}', ""]
+,['\\{celtraAndroidAdvId\\}', ""]
+,['\\{celtraCampaignId:int\\}', "2183561973"]
+,['\\{celtraCampaignId\\}', "822682f5"]
+,['\\{celtraCampaignName\\}', "Valvoline-Henley%20Enterprises_AUS40278%20Q1%202024%20Epic%20NCIS-1631"]
+,['\\{celtraCountryCode\\}', "US"]
+,['\\{celtraCreativeId:int\\}', "3209583503"]
+,['\\{celtraCreativeId\\}', "bf4e5b8f"]
+,['\\{celtraCreativeVariant:urlenc\\}', ""]
+,['\\{celtraCreativeVariant\\}', ""]
+,['\\{celtraCustomPartnerAttribute\\[code\\]\\}', ""]
+,['\\{celtraExternalAdServer\\}', "Amobee"]
+,['\\{celtraExternalAdvertiserId\\}', ""]
+,['\\{celtraExternalBundleId\\}', ""]
+,['\\{celtraExternalCampaignId\\}', ""]
+,['\\{celtraExternalCampaignName\\}', ""]
+,['\\{celtraExternalCreativeId\\}', "1609579883"]
+,['\\{celtraExternalCreativeName\\}', ""]
+,['\\{celtraExternalDestinationUrl\\}', ""]
+,['\\{celtraExternalLineItemId\\}', "1609771726"]
+,['\\{celtraExternalPlacementId\\}', ""]
+,['\\{celtraExternalPlacementName\\}', ""]
+,['\\{celtraExternalSessionId\\}', "7800062555675572522"]
+,['\\{celtraExternalSiteId\\}', "https://agar.io/"]
+,['\\{celtraExternalSiteName\\}', ""]
+,['\\{celtraExternalSupplierId\\}', "158"]
+,['\\{celtraExternalSupplierName\\}', ""]
+,['\\{celtraFeedReportLabel\\}', ""]
+,['\\{celtraIosAdvIdTrackingLimitedBoolStr\\}', ""]
+,['\\{celtraIosAdvIdTrackingLimited\\}', ""]
+,['\\{celtraIosAdvId\\}', ""]
+,['\\{celtraPlacementId:int\\}', "617209828"]
+,['\\{celtraPlacementId\\}', "24c9dfe4"]
+,['\\{celtraPlatformAdvIdTrackingLimited\\}', ""]
+,['\\{celtraPlatformAdvId\\}', ""]
+,['\\{celtraProto\\}', "https"]
+,['\\{celtraRandom\\}', (Math.random()+'').slice(2)]
+,['\\{celtraSessionId\\}', "s1731282219xbb08f6a1767a9bx59880357"]
+,['\\{celtraSupplierId:int\\}', "2569622726"]
+,['\\{celtraSupplierId\\}', "992954c6"]
+
+        ];
+        return macroTags.reduce(function(str, replacementRule, idx, arr) {
+            return str.replace(new RegExp(replacementRule[0], 'ig'), replacementRule[1] ? replacementRule[1] : '');
+        }, x);
+    }
+};
+
+    var urlOpenedOverrideUrls = {"click-thru":"https://15minuteoilchange.com/nexxen"};
+    var storeOpenedOverrideUrls = {};
+    var urlOpenedUrlAppendage = "";
+    var clickThroughDestinationUrl = null;
+
+    var payloadBase = "https://cache-ssl.celtra.com/api/creatives/bf4e5b8f/compiled/web.js";
+    var cacheParams = {"v": "5-1aee7c25", "secure": 1, "cachedVariantChoices": "W10-", "isPurposePreview": 0, "decreasePayloadWeight": '1'};
+
+    
+    var trackers = (function() {
+    return [
+        
+function(event) {
+    if (event.name == 'adLoading')
+        return {urls: macros([])};
+
+    if (event.name == 'firstInteraction')
+        return {urls: macros([])};
+
+    if (event.name == 'creativeLoaded')
+        return {urls: macros([])};
+
+    if (event.name == 'creativeRendered')
+        return {urls: macros([])};
+
+    if (event.name == 'viewable00')
+        return {urls: macros([])};
+
+    if (event.name == 'viewable501')
+        return {urls: macros([])};
+
+    if (event.name == 'expandRequested')
+        return {urls: macros([])};
+
+    if (event.name == 'videoPlayInitiated')
+        return {urls: macros([])};
+
+    if (event.clazz === "MasterVideo") {
+        if (event.name == 'videoStart')
+            return {urls: macros([])};
+
+        if (event.name == 'videoFirstQuartile')
+            return {urls: macros([])};
+
+        if (event.name == 'videoMidpoint')
+            return {urls: macros([])};
+
+        if (event.name == 'videoThirdQuartile')
+            return {urls: macros([])};
+
+        if (event.name == 'videoComplete')
+            return {urls: macros([])};
+    }
+
+    if (event.name == 'videoPause')
+        return {urls: macros([])};
+
+    if (event.name == 'videoMuted')
+        return {urls: macros([])};
+
+    if (event.name == 'videoUnmuted')
+        return {urls: macros([])};
+
+    if (event.name == 'custom')
+        return {urls: macros({}[event.label] || [])};
+
+    if (event.name == 'urlOpened')
+        return {urls: macros({}[event.label] || [])};
+
+    if (event.name == 'storeOpened')
+        return {urls: macros({}[event.label] || [])};
+},
+
+function(event) {
+    if (event.name === "firstInteraction")
+        return {urls: macros([]), events: [{name: 'click'}] };
+},
+// Ad server tracker
+function(event) {
+    if (event.name === "firstInteraction")
+        return {urls: macros(["https://presentation-pdx1.turn.com/r/formclick/urlid/1XsZWZfoTOiG6Rs8JKzFclq3clLeygd6POrFX1gvk8GLJgLmdLQYGnfDnDdAZSpNM9lKfk-og3HGqOLW6rsv9lgVUaa81rE5Va5TPoJV_1Ntn4-ZNPeiesLCUWGi5Q0pMJmYCXbQF_oYMjRN21w4LJTbLcisF5vf52pYjnxx7sgLDq60qaLSM9lSDH_P7r3m2LfHLNhuhT3pi82fEsIKY-zMcLaIqUa9FRu7ru1ABYiMSovQFojw5vW2yPjGkSVc0HVBzulYFlMXx62SJJzd5l8ksZRIgSQc_prBdh2vvVdldmWAaDuAmO71GvHXzkcHKsPGtQPA5tNJwUqr-aElAV5qGrnx9bwjX7PAkvwBwOakiNNG_3c-GkFswlOjiVE0ej-qs-UQ3Mx3VUBnpWQ2d7vliwhTzzzCljJgWdol-wLA_nMsuROzhZ_CH9wqRMdtmNACs-tBcCpdgtEpdE3B_nrTaXPRUNSsdb1rmbQbC7JJm_SJdFq9dFFsrRVoU4WBetMmuq6gl6N2db-5rNaK8nBZrvBBzEzJ4iAZQ0F6Wm2nc1QYL5T8xaYQC1O1-T7ki3NUbSq602Vyt-H_WldH_MK2GksZ-zhybhYHis8e_tSwph1Kpj2Q8YpaaCRsxMNNRQcWHSybb2ej4a7iteRseG_7HzwdXc8C3YNIyQYbO39B8ocmP-FeqJjE7BX57nNvuwpu_QP3Y_XJsHdTebRazFw0i1ey_v9fXlyhLV9UJxQVUTiuIOF5Ek_9XmvuEmT0vEluZoqYerW0HgC_wqcCYSWNjhh5OPtJbggF3FbE1YCR7Xq54b0dq54SCC-aQRzZ9vb_-KhhL2Fc9Ru3Cn8LwUECjf2eGEkjmMA-oZFRas2p3FMQygkm3rlnGm21B03sROr2ygx-iOG0liAhrNmDhdYGutw4VUJRBcOjv9b37eWz4Cp4Qjy-CXKUgO9gpP9v4w_8lt_qNF0RzK7uP2rBb_OPyQKWk_uhZykOT9k-rtueHoS3SjAxoWE0mr7tpeVnoXm_sLGrFot5PfKQkLfL37eDp93v3UjFqrwgXQ_PnfOcO7go25Zi5ftDWsbcN-vy7N8paTkCK7zWESqBvbUrnZo1ShC0Z2qttrUnkK4SVzcB7QacO35QtRUwk3PZb8FJFMlh2axYZqhfFFI3VNBaXJvrqIdvI0_N5j8dwcSUbduATrXp32z96mFz4TjrXq_WDGEAhdLLvBGdHsiW4MER6l33pV72UzwiddEPalVQbBceyuix4YHfsmobqROyGym3uMnYYIc7nbDvcYE1hgrlkxrSl8W3lWE7OHmBUPnH2s2OwH1tJKRR5-m5o_bYvG2O0mi1mI78qZDqL-OmNnb2Dtg/url/"]), events: [{name: 'clickReportedToSupplier'}] };
+}
+    ]
+})();
+    trackers.urlsAndEventsFor = function(event) {
+        return this.reduce(function(acc, tracker) {
+            var ue = tracker(event) || {};
+            return {
+                urls:   acc.urls.concat(ue.urls || []),
+                events: acc.events.concat(ue.events || [])
+            };
+        }, {urls: [], events: []});
+    };
+       
+
+    
+var adLoadingEvent = {"name":"adLoading","sessionId":"s1731282219xbb08f6a1767a9bx59880357"};
+adLoadingEvent.clientTimestamp = new Date/1000;
+
+trackers.urlsAndEventsFor(adLoadingEvent).urls.forEach(function(url) {
+    try {
+        var img = new Image;
+        
+        img.src = url;
+    } catch(e) {}
+});
+    
+
+    
+(function () {
+    runtimeParams.protoLoading = {};
+
+    var base64img = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4wEKCBsN103sxwAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAC0lEQVQI12NgAAIAAAUAAeImBZsAAAAASUVORK5CYII=";
+
+    runtimeParams.protoLoading.dataLoadStatus = null;
+    var dataImg = new Image();
+    dataImg.onload = function() {
+        runtimeParams.protoLoading.dataLoadStatus = "supported";
+    };
+    dataImg.onerror = function(e) {
+        runtimeParams.protoLoading.dataLoadStatus = "blocked";
+    };
+    dataImg.src = "data:image/png;base64," + base64img;
+
+    runtimeParams.protoLoading.blobLoadStatus = null;
+    var url = null;
+    try {
+        var binaryImg = atob(base64img);
+        var length = binaryImg.length;
+        var ab = new ArrayBuffer(length);
+        var ua = new Uint8Array(ab);
+        for (var i = 0; i < length; i++) {
+            ua[i] = binaryImg.charCodeAt(i);
+        }
+        var blob = new Blob([ab], {type: 'image/png'});
+        url = URL.createObjectURL(blob);
+    } catch(error) {
+        runtimeParams.protoLoading.blobLoadStatus = "error";
+        runtimeParams.protoLoading.blobErrorMessage = error.name + ': ' + error.message;
+        return;
+    }
+    var blobImg = new Image();
+    blobImg.onload = function() {
+        runtimeParams.protoLoading.blobLoadStatus = "supported";
+        URL.revokeObjectURL(url);
+    };
+    blobImg.onerror = function(e) {
+        runtimeParams.protoLoading.blobLoadStatus = "blocked";
+    };
+    blobImg.src = url;
+})();
+    
+
+    function buildPayloadParams() {
+      var pairs = [];
+      for (var k in cacheParams)
+          pairs.push(encodeURIComponent(k) + '=' + encodeURIComponent(cacheParams[k]));
+      return pairs.join('&');
+    }
+
+    var payloadUrl = payloadBase + '?' + buildPayloadParams();
+    var payloadLookupKey = "bf4e5b8f/web.js?" + buildPayloadParams();
+
+    
+var payload = document.createElement('script');
+payload.src = payloadUrl;
+payload.onload = function() {
+
+runtimeParams.payloadJsClientTimestamp = new Date() / 1000;
+window.celtraDeviceInfoRuntimeParams = runtimeParams.deviceInfo;
+const selectedPayload = window.celtra.payloads[payloadLookupKey] ? window.celtra.payloads[payloadLookupKey] : window.celtra.payloads[payloadUrl];
+selectedPayload(script, runtimeParams, trackers, urlOpenedOverrideUrls, storeOpenedOverrideUrls, macros, urlOpenedUrlAppendage, clickThroughDestinationUrl);
+    
+};
+script.parentNode.insertBefore(payload, script.nextSibling);
+    
+    
+    
+    
+})();
+  
