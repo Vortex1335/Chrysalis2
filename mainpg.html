@@ -4,7 +4,10 @@
     <head bgcolor="blue">
       <h2>Chrysalis</h2>
       <h5>Pick a link or search for one here</h5>
-      <input id="searchBar" value=""></input>
+      <!--<input id="searchBar" value=""></input>-->
+      <a id="option0"></p>
+      <a id="option1"></p>
+      <a id="option2"></p>
       <style>
         #bolded {
           color: #ff0000;
@@ -49,7 +52,12 @@
         }
       </style>
       <script>
+        const games = ["n-gon","planetesimals","paperio2","drift boss","slope","cluster rush","crazy cars","snow rider 3D","tanuki sunset","basket random","unblocker","stickman hook","OvO"];
         var searchBar = document.getElementById("searchBar").value;
+        var searchedItem;
+        var option0 = document.getElementById("option0").innerHTML;
+        var option1 = document.getElementById("option1").innerHTML;
+        var option2 = document.getElementById("option2").innerHTML;
       </script>
     </head>
     <body>
