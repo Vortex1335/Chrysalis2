@@ -3,9 +3,8 @@
     <title>Chrysalis</title>
     <head bgcolor="blue">
       <h2>Chrysalis</h2>
-      <h5>Pick a link</h5>
-      <script>
-      </script>
+      <h5>Pick a link or search for one here</h5>
+      <input id="searchBar" value=""></input>
       <style>
         #bolded {
           color: #ff0000;
@@ -49,8 +48,11 @@
 }
         }
       </style>
+      <script>
+        var searchBar = document.getElementById("searchBar").value;
+      </script>
     </head>
-    <body text="purple">
+    <body>
       <a href="https://chrysalis3.vercel.app/n-gon/index.html">N-Gon</a>
       <p>Physics based shooter game made with JavaScript</p>
       <a href="https://chrysalis3.vercel.app/planetesimals/index.html">Planetesimals</a>
