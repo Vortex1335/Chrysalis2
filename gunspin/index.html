@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>GunSpin</title>
+<link rel="shortcut icon" href="https://totallyscience.co/assets/games/gunspin/style/favicon.ico">
+<link rel="stylesheet" href="style/style.css">
+<script src="UnityLoader.js" type="ffed35fbd172e9870363235b-text/javascript"></script>
+<script src="UnityProgress.js" type="ffed35fbd172e9870363235b-text/javascript"></script>
+<script type="ffed35fbd172e9870363235b-text/javascript">
+            var gameInstance = UnityLoader.instantiate("gameContainer", "build.json", {
+                onProgress: UnityProgress,
+                Module: {
+                    onRuntimeInitialized: function() {
+                        UnityProgress(gameInstance, "complete")
+                    }
+                }
+            });
+        </script>
+</head>
+<body>
+<div class="webgl-content">
+<div id="gameContainer" style="width: 100%; height: 100%; margin: auto;"></div>
+</div>
+</div>
+<script src="../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ffed35fbd172e9870363235b-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"81b64889ef4cec2b","b":1,"version":"2023.10.0","token":"21558dcd6f07453495fa355e64d153cd"}' crossorigin="anonymous"></script>
+</body>
+</html>
